@@ -4,7 +4,7 @@ from signal import pause
 import os, sys
 
 offGPIO = int(sys.argv[1]) if len(sys.argv) >= 2 else 21
-holdTime = int(sys.argv[2]) if len(sys.argv) >= 2 else 2
+holdTime = int(sys.argv[2]) if len(sys.argv) >= 3 else 2
 
 # the function called to shut down the RPI
 def shutdown():
